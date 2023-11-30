@@ -1,0 +1,170 @@
+body {
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+.main {
+    box-sizing: border-box;
+    border: 2px solid gray;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.image {
+    width: 100%;
+
+}
+
+.image img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content h3 {
+    font-weight: lighter;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.content h2 {
+
+    width: 60%;
+}
+
+.content .detail {
+    color: gray;
+    line-height: 1.5;
+    width: 85%;
+}
+
+.price {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price span {
+    font-size: xx-large;
+    padding: 20px 10px;
+    letter-spacing: 150%;
+    color: green;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+
+.price span small {
+    font-size: small;
+    font-family: sans-serif;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 25px;
+
+
+}
+
+.content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(66, 110, 66);
+    margin: 30px auto;
+    padding: 10px 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main {
+        margin-left: auto;
+        margin-top: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1fr;
+        width: 90vw;
+        height: 85vh;
+        border: none;
+        margin-bottom: 0px;
+    }
+    
+    .image {
+        height: 30vh;
+        object-fit: cover;
+    }
+    
+    .image img {
+        object-position: 0% 30%;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .content {
+        width: 90%;
+    }
+    
+    .content h3 {
+        margin: 0px;
+    }
+
+    .content h2 {
+        width: 95%;
+    }
+
+    .content .detail {
+        color: gray;
+        line-height: 1.3;
+        width: 85%;
+    }
+
+    .price {
+        margin-top: 0px;
+    }
+
+    .price span {
+        font-size: xx-large;
+        padding: 20px 10px;
+        letter-spacing: 150%;
+        color: green;
+        font-weight: bolder;
+        font-family: fantasy;
+    }
+
+    .price span small {
+        font-size: small;
+        font-family: sans-serif;
+        color: gray;
+        text-decoration: line-through;
+        margin-left: 25px;
+
+
+    }
+
+    .content button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 10px;
+        color: white;
+        font-weight: bolder;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(66, 110, 66);
+        margin: 10px auto;
+        padding: 10px 50px;
+    }
+}
